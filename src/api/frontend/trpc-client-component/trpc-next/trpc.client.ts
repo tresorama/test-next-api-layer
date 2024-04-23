@@ -2,8 +2,8 @@ import { httpBatchLink } from '@trpc/client';
 import { createTRPCNext } from '@trpc/next';
 import { getBaseUrl } from '@/api/utils/get-base-url';
 import superjson from 'superjson';
-import type { RootRouter } from '@/api/backend/root.router';
-export type { RootRouterInputs, RootRouterOutputs } from "@/api/backend/root.router";
+import type { RootRouter } from '@/api/backend/routers/root.router';
+export type { RootRouterInputs, RootRouterOutputs } from "@/api/backend/routers/root.router";
 
 
 export const trpc = createTRPCNext<RootRouter>({
